@@ -1,11 +1,12 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../views/Login.vue'
-import Register from '../views/Register.vue'
-import NowShowing from '../views/NowShowing.vue'
-import ComingSoon from '../views/ComingSoon.vue'
-import Info from '../components/body/Info.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import Login from '../views/Login.vue';
+import Register from '../views/Register.vue';
+import NowShowing from '../views/NowShowing.vue';
+import ComingSoon from '../views/ComingSoon.vue';
+import Info from '../components/body/Info.vue';
+import BookingTickets from '@/views/booking/Tickets.vue';
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,7 @@ const routes = [
   {path: '/nowshowing', name: 'NowShowing', component: NowShowing},
   {path: '/comingsoon', name: 'ComingSoon', component: ComingSoon},
   {path: '/info', name: 'Info', component: Info},
+  {path: '/booking/tickets', name: 'BookingTickets', component: BookingTickets},
 ]
 
 const router = new VueRouter({

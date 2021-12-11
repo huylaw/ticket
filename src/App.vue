@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Header/>
+  <div id="app relative">
+    <Header class="sticky top-0 z-20"/>
     <router-view/>
     <Footer/>
   </div>

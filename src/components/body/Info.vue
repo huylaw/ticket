@@ -21,21 +21,33 @@
             </div>
             <div class="flex justify-center py-10">
                 <el-button type="info"><a href="https://www.youtube.com/watch?v=WDeMhjGyRww" target="_blank">Trailer</a></el-button>
-                <el-button type="info"><router-link to='/login'>Mua vé</router-link></el-button>
-            </div>
-            <div>
-
+                <el-button type="info" @click="handleBuyTicket">
+                    Mua vé
+                </el-button>
             </div>
         </div>
+        <PickShiftDialog ref="pickShiftDialog" />
     </div>
 </template>
 
 <script>
+    import PickShiftDialog from '@/components/shift/Dialog.vue';
+
     export default {
+        components: {
+            PickShiftDialog,
+        },
+
         data(){
             return {
 
             };
-        }
+        },
+
+        methods: {
+            handleBuyTicket() {
+                this.$refs.pickShiftDialog?.open();
+            },
+        },
     };
 </script>
