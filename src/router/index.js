@@ -16,7 +16,7 @@ const routes = [
   {path: '/register', name: 'Register', component: Register},
   {path: '/nowshowing', name: 'NowShowing', component: NowShowing},
   {path: '/comingsoon', name: 'ComingSoon', component: ComingSoon},
-  {path: '/info', name: 'Info', component: Info},
+  {path: '/info/:id', name: 'Info', component: Info},
   {path: '/booking/tickets', name: 'BookingTickets', component: BookingTickets},
 ]
 
